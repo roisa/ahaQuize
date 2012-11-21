@@ -1,4 +1,9 @@
-## 2.0 BOOTSTRAP JS PHILOSOPHY
+## ahaQuize
+ahaQuize build with Bootstrap: sleek, intuitive, and powerful front-end framework for faster and easier web development.
+
+---
+
+### 2.0 BOOTSTRAP JS PHILOSOPHY
 These are the high-level design rules which guide the development of Bootstrap's plugin apis.
 
 ---
