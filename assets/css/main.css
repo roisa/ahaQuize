@@ -326,7 +326,7 @@ box-shadow: 0px 0px 10px #333;
      -moz-border-radius: 5px;
           border-radius: 5px;
   min-height: 30px;
-  line-height: 30px;
+  /*line-height: 30px;*/
 }
 .show-grid:hover [class*="span"] {
   background: #ddd;
@@ -383,7 +383,7 @@ box-shadow: 0px 0px 10px #333;
 }
 
 
-/* Popover docs
+/* Popover
 -------------------------------------------------- */
 .popover-well {
   min-height: 160px;
