@@ -1,11 +1,11 @@
-﻿/**
+/**
  * --------------------------------------------------------------------
  * jQuizzy - jQuery plugin for creating quizzes
  * by Siddharth S - www.ssiddharth.com
  * Copyright (c) 2012 Siddharth
  * Version: 1.3	
  
- * edited by Tim AhaQuize
+ * edited by Tim AhaQuize © 2012
  * --------------------------------------------------------------------
  **/
 (function ($) {
@@ -34,9 +34,6 @@ var name = "Adek";
 
         };
 		
-		
-		
-
         var config = $.extend(defaults, settings);
         if (config.questions === null) 
 		{
@@ -46,20 +43,17 @@ var name = "Adek";
 		
 		var superContainer = $(this),
             answers = [],
-            introFob = '<'+show_prompt()+'><div class="intro-container slide-container"><h3 style="text-align:center">Petunjuk Kuis</h3><p style="text-align:center">1. Pilih salah satu dari lima pilihan jawaban yang disediakan</p><p style="text-align:center">2. Klik tombol "next" untuk melanjutkan ke soal selanjutnya</p><p style="text-align:center">3. Klik tombol "prev" untuk kembali ke soal yang sebelumnya</p><p style="text-align:center">4. Klik tombol "finish" untuk mengakhiri dan melihat hasil kuis</p><a class="tombol nav-start" href="#" style="color:#ffffff;">Mulai</a></div>	',
-            exitFob = '<div class="results-container slide-container"><div class="question-number">' + config.endText + '</div><div class="result-keeper"></div></div><div class="notice alert alert-error"><h4>Silahkan pilih jawaban terlebih dahulu!</h4></div><div class="progress-keeper" ><div class="progress"></div></div>';
+            introFob = '<'+show_prompt()+'><div class="intro-container slide-container"><ul class="text-block2"><li><h1><strong>Petunjuk FunPhysic Quiz</strong></h1></li><li><h1>&raquo; Pilih <b>salah satu</b> jawaban</h1></li><li><h1>&raquo; Klik tombol <strong>Next</strong> untuk melanjutkan</h1></li><li><h1>&raquo; Klik tombol <strong>Prev</strong> untuk kembali</h1></li><li><h1>&raquo; Klik tombol <strong>Finish</strong> dan lihat hasil kuis</h1></li></ul><a class="tombol nav-start" href="#quize" style="color:#ffffff;">Mulai</a></div>',
+            exitFob = '<div class="results-container slide-container"><div class="question-number">' + config.endText + '</div><div class="result-keeper"></div></div><div class="notice alert alert-error"><h4>Ops, pilih jawaban terlebih dahulu!</h4></div><div class="progress-keeper" ><div class="progress"></div></div>';
 		
 		
 		function show_prompt()
 		{
 				contentFob = '';
-	
-		}
-		
+		}		
 		
 		superContainer.addClass('main-quiz-holder');
         
-
         for (questionsIteratorIndex = 0; questionsIteratorIndex < config.questions.length; questionsIteratorIndex++) 
 		{
             /*
@@ -93,15 +87,15 @@ var name = "Adek";
 
             if (questionsIteratorIndex !== 0) 
 			{
-                contentFob += '<div class="prev"><a href="#" style="color:#ffffff;"><i class="icon-arrow-left icon-white" style="margin-top:1px;"></i> <b>Prev</b></a></div>';
+                contentFob += '<div class="prev"><a href="" style="color:#ffffff;"><i class="icon-arrow-left icon-white" style="margin-top:1px;"></i> <b>Prev</b></a></div>';
             }
             if (questionsIteratorIndex < config.questions.length - 1) 
 			{
-                contentFob += '<div class="next"><a href="#" style="color:#ffffff;"><b>Next</b> <i class="icon-arrow-right icon-white" style="margin-top:1px;"></i></a></div>';
+                contentFob += '<div class="next"><a href="" style="color:#ffffff;"><b>Next</b> <i class="icon-arrow-right icon-white" style="margin-top:1px;"></i></a></div>';
             } 
 			else 
 			{
-                contentFob += '<div class="next final"><a href="#" style="color:#ffffff;"><b>Finish</b> <i class="icon-ok icon-white" style="margin-top:1px;"></i></a></div>';
+                contentFob += '<div class="next final"><a href="" style="color:#ffffff;"><b>Finish</b> <i class="icon-ok icon-white" style="margin-top:1px;"></i></a></div>';
             }
 
             contentFob += '</div></div>';
