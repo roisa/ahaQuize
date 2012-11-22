@@ -6,6 +6,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ * Edited by Tim Ahae
  */
 article,
 aside,
@@ -157,7 +158,7 @@ body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
-  line-height: 18px;
+  /*line-height: 18px;*/
   color: #333333;
   background-color: #ffffff;
 }
@@ -167,7 +168,7 @@ a {
 }
 a:hover {
   color: #005580;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 .row {
   margin-left: -20px;
@@ -343,12 +344,12 @@ a:hover {
 .container-fluid:after {
   clear: both;
 }
-p {
+/*p {
   margin: 0 0 9px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
-}
+}*/
 p small {
   font-size: 11px;
   color: #999999;
@@ -382,14 +383,14 @@ h6 small {
 }
 h1 {
   font-size: 30px;
-  line-height: 36px;
+  /*line-height: 29px;*/
 }
 h1 small {
   font-size: 18px;
 }
 h2 {
   font-size: 24px;
-  line-height: 36px;
+  /*line-height: 36px;*/
 }
 h2 small {
   font-size: 18px;
@@ -444,7 +445,7 @@ h6 {
 ul,
 ol {
   padding: 0;
-  margin: 0 0 9px 25px;
+  /*margin: 0 0 9px 25px;*/
 }
 ul ul,
 ul ol,
@@ -459,7 +460,7 @@ ol {
   list-style: decimal;
 }
 li {
-  line-height: 18px;
+  /*line-height: 18px;*/
 }
 ul.unstyled,
 ol.unstyled {
@@ -647,7 +648,7 @@ textarea {
 label {
   display: block;
   margin-bottom: 5px;
-  color: #333333;
+  /*color: #333333; */
 }
 input,
 textarea,
@@ -1425,18 +1426,19 @@ table .span24 {
   width: 1884px;
   margin-left: 0;
 }
-[class^="icon-"],
+
+ /*[class^="icon-"],
 [class*=" icon-"] {
   display: inline-block;
-  width: 14px;
+ width: relative;
   height: 14px;
-  line-height: 14px;
+  line-height: 10px;
   vertical-align: text-top;
   background-image: url("../img/glyphicons-halflings.png");
   background-position: 14px 14px;
   background-repeat: no-repeat;
   *margin-right: .3em;
-}
+}*/
 [class^="icon-"]:last-child,
 [class*=" icon-"]:last-child {
   *margin-left: 0;
