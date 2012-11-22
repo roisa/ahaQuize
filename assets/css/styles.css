@@ -1,3 +1,6 @@
+/*!
+ * jQuizzy edited by Tim Ahae
+ */
 .notification
 	{
 	 position: absolute;
@@ -60,8 +63,8 @@
 
 .main-quiz-holder .slide-container ul.answers li {
 	cursor: pointer;
-	height: 25px;
-	padding: 5px 30px;
+	height: relative;
+	padding: 10px 30px;
 	padding-top:10px;
 	margin: 10px 0;
 	font-size:18px;
@@ -98,7 +101,7 @@
 .main-quiz-holder .slide-container .prev, .main-quiz-holder .slide-container .next {
   height: 19px; cursor: pointer; 
   padding: 4px 10px;
-  padding-bottom:15px;
+  padding-bottom:10px;
   font-size: 16px;
   color: #ffffff;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
@@ -118,6 +121,7 @@
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
+  padding: 7px;
   
 }
 
@@ -139,6 +143,7 @@
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
+  padding: 7px;
 }
 
 .main-quiz-holder .progress-keeper {
@@ -169,7 +174,7 @@
 .main-quiz-holder .notice {
 	position: absolute;
 	text-align:center;
-	width:280px;
+	/*width:280px;*/
 	height:15px;
 	padding-top:5px;
 	padding-bottom:10px;
@@ -191,17 +196,18 @@
 .main-quiz-holder .slide-container .prev {
 	width:55px;
 	float: left;
+	text-align:center;
 }
 
 .main-quiz-holder .slide-container .next, .main-quiz-holder .slide-container .final {
 	width:55px;
 	float: right;
-	text-align:right;
+	text-align:center;
 }
 
 .main-quiz-holder .slide-container .final {
   width: 70px;
-	text-align:right;
+	text-align:center;
 }
 
 .main-quiz-holder .nav-previous {
@@ -280,10 +286,10 @@
 }	
 	
 .main-quiz-holder .correct, .main-quiz-holder .wrong {    
-	height: 19px; cursor: pointer; 
-   font-size: 16px;
-   padding: 1px 15px;
-   padding-bottom:10px;
+  height: 19px; cursor: pointer; 
+  font-size: 16px;
+  padding: 7px 0px;
+  padding-bottom:10px;
   color: #4c4c4c;
   border-radius: 0px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
@@ -366,7 +372,7 @@
 	  color:#ffffff;
 	  width:110px;
 	  height:35px;
-	  padding-top:5px;
+	  padding:5px;
 }
 
 .pagination { position: absolute; bottom: 15px; left: 50%; margin-left: -44px; width: 88px; }
