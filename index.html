@@ -1,16 +1,44 @@
+<!--Project : ahaQuize
+    Version : Alpha index
+    Date    : 21/10/2012
+    Author  : Tim Ahae
+    Company : PendtoffA
+    Comments: ahaQuize merupakan fun physic quiz
+    
+    Team Member:
+      Roisatul Azizah
+      Hamdani Arif
+      Akhmad Aziz A.
+
+    Thanks to:
+      Allah SWT, Muhammad SAW, Orang tua,
+      Teman-teman seperjuang, dan semua pihak yang telah membantu
+    
+    Built with: Bootstrap, Cordova, jQuizzy, smooth.pack.js, jQuery, ga.js, etc
+
+    Interaksi Manusia-Komputer
+    © Copyright 2012
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>ahaQuize &raquo; Kuis</title>
-  <!-- Hammelbi icon -->
+  <meta name="author" content="Tim Ahae" />
+  <meta name="description" content="ahaQuize is simple way to evaluate physics it'll bring Clear Interface and Measured attainment"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
   <link href="assets/img/ahaQuize.png" rel="shortcut icon"/>  
-  
-  <link href="assets/css/bootstrap.css" rel="stylesheet">
+
   <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+
   <link href="assets/css/main.css" rel="stylesheet">
 	<link href='assets/css/styles.css' rel='stylesheet'/>
   <link href='assets/css/master.css' rel='stylesheet'/>
-  <!--<link href='assets/css/sliding.css' rel='stylesheet'/>-->
+  <!--
+  <link href='assets/css/sliding.css' rel='stylesheet'/>-->
 </head>
 
 <body>
@@ -18,12 +46,13 @@
 <div id="header"><a class="scroll-point pt-top" name="top"></a><div class="wrap">
   <a class="scroll-point pt-top" name="top"></a>
       <div class="menu">
+        <a href="#quize">Quiz</a>
         <a href="#about">About</a>
-        <a href="#contact-us">Contact Us</a>
-        
+        <a href="#contact-us">Contact Us</a>    
       </div>
     <form class="menu-dropdown">
       <select onchange="location = this.options[this.selectedIndex].value;">
+        <option value="#quize">Quiz</option>
         <option value="#about">About</option>
         <option value="#contact-us">Contact Us</option>
       </select>
@@ -34,27 +63,89 @@
 </div>
 <div class="header-placeholder"></div>
 
-<div class="grid leadin">
-<div class="wrap">
-<div class="container-fluid">
-<div class="row-fluid page-header">
-	 <p style="background-color:transparent;">
-       <h1 style="text-align: center;">Kuis</h1>
-	 </p>
-   <div class="pagination"></div>
-</div>
-					<div class="row-fluid show-grid" style="left: 0px; -webkit-transition: all 1000ms cubic-bezier(0.215, 0.61, 0.355, 1);">
-					<div class="span2" style="background-color:transparent;"></div>
-					<div class="span8" style="background-color:transparent; text-align:left;" id='quiz-container'></div>
-					<div class="span2" style="background-color:transparent;"></div>
-					</div>
-</div>
-</div>
-</div>
-<footer id="footer">
-        <p>Copyright &copy; 2012 <a href="#" title="Tim Ahae">Tim Ahae </a>&raquo; Special for <a href="jauharul.github.com/notes" target="_blank" title="Interaksi Manusia-Komputer">IMK</a></p>
-        <a class="closing" href="#top"></a>
-</footer>
+  <div class="grid leadin">
+      <div class="wrap">
+        <img src="assets/img/taeyeon.png" alt="">
+        <ul class="text-block">
+          <li><h1><strong>Aha FunPhysic</strong> is simple way</h1></li>
+          <li><h1>to evaluate physics </h1></li>
+          <li><h1>it'll bring <strong>Clear Interface</strong></h1></li>
+          <li><h1>and <strong>Measured</strong> attainment</h1></li>
+        </ul>
+        <div class="button-container">
+        <a class="button" href='#quize'>START<label>is Your turn to get fun</label></a></div>
+      </div>
+  </div>
+  
+  <a class="scroll-point pt-about" name="about"></a>
+  <div class="wrap">
+      <h2 class="icon icon-about">About ahaQuize™</h2>
+      <p><b><i>Aha</i>Quize</b> terinsiprasi dari sebuah keinginan untuk mengembangkan tools evaluasi berbasis website yang baik (dalam unsur interaksi, antarmuka dan pendidikannya), yaitu sesuai dengan prinsip IMK (Interaksi Manuasia-Komputer). AhaQuize merupakan salah satu tugas besar mata kuliah Interaksi Manusia dan Komputer (IMK) yang di develop oleh tim Ahae. Tim Ahae terdiri dari 3 Mahasiswa yang berasal prodi S1 Pendidikan Teknik Informatika Jurusan Elektro Fakultas Teknik Universitas Negeri Malang. AhaQuize merupakan Tools evaluasi yang ditujukan untuk siswa SMA kelas XI pada matapelajaran Fisika. Tools evaluasi ini mengusung konsep <i>simply-focused </i></b>sehingga diharapkan mampu memaksimalkan kemampuan berpikir <i>user</i> dalam mengerjakan soal.</p>
+      <p><b><i>Aha</i>Quize</b> berasalah dari singkatan nama anggota tim yaitu Azizah-Hamdani-Aziz, Quize memberi penekan bahwa quiz yang diberikan itu 'e'='<i>enjoy</i>'. AhaQuize dikembangkan dengan menggunakan bantuan <i>Quiz engine </i> jQuizzy, Bootstrap front-end framework, Javascript Smooth Scroll smooth.pack.js, jQuery v1.8.0</p>
+  
+  </div>
+
+<a class="scroll-point" name="contact-us"></a>
+  <hr>
+
+  <div class="wrap">
+      <h2 class="icon icon-contact-us">Contact Us</h2>
+  </div>
+
+  <div class="grid">
+      <div class="wrap">  
+          <div class="corner"></div>
+          <br>
+        <div class="list-header">
+        <strong>Content Provider</strong>
+        </div>
+      <ul class="list contact-us">
+        <li>Name<a href="#">Akhmad Aziz Ardiansyah<span></span></a></li>
+        <li>Email<a href="mailto:Ardiansyah711@gmail.com">ardiansyah711@gmail.com<span></span></a></li>
+        <li>Github<a href="https://github.com/guchh">github.com/Guchh<span></span></a></li>
+        <li>Website<a href="http://laliaku.com">laliaku.com<span></span></a></li>
+      </ul>
+      <br>
+      <div class="list-header">
+        <strong>Layout Handler</strong>
+        </div>
+      <ul class="list contact-us">
+        <li>Name<a href="#">Hamdani Arif<span></span></a></li>
+        <li>Email<a href="mailto:hamham.dani@gmail.com">hamham.dani@gmail.com<span></span></a></li>
+        <li>Github<a href="https://github.com/ham-ham">github.com/ham-ham<span></span></a></li>
+        <li>Website<a href="http://trick4pc.com/">trick4pc.com<span></span></a></li>
+      </ul>
+      <br> 
+      <div class="list-header">
+        <strong>System Manager</strong>
+        </div>
+      <ul class="list contact-us">
+        <li>Name<a href="#">Roisatul Azizah<span></span></a></li>
+        <li>Email<a href="mailto:roisa.mscdr@gmail.com">roisa.mscdr@gmail.com<span></span></a></li>
+        <li>Github<a href="https://github.com/roisa">github.com/roisa<span></span></a></li>
+        <li>Website<a href="http://wedooindonesia.com">wedooindonesia.com<span></span></a></li>
+      </ul> 
+    </div>
+  </div>
+
+  <div class="grid leadin">
+  <a class="scroll-point pt-about" name="quize"></a>
+  <div class="wrap2">
+  <div class="container-fluid">
+    <div class="row-fluid show-grid">
+      <div class="span2" style="background-color:transparent;"></div>
+        <div class="span8" style="background-color:transparent; text-align:left;" id='quiz-container'></div>
+        <div class="span2" style="background-color:transparent;"></div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div id="footer">
+    <p>Developed by <b>Tim Ahae</b> Azizah-Hamdani-Aziz e © 2012 <br>
+    Thanks to Allah SWT</p>
+    <a class="closing" href="#top"></a>
+  </div>
 
 <!-- Le javascript ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -80,7 +171,7 @@
 	<script src='assets/js/jquery.jquizzy.js'></script> 
 	<script src='assets/js/init.js'></script>
 	<script src='assets/js/ga.js' type="text/javascript"></script>
-  <script src='assets/js/smooth.ps.js' type="text/javascript"></script>
+  <script src='assets/js/smooth.pack.js' type="text/javascript"></script>
 
 	<script type="text/javascript">
 	 $('#quiz-container').jquizzy({
@@ -96,5 +187,6 @@
     <script src="js/modernizr.custom.js"></script>
   <![endif]-->
   <script src="assets/js/functions.js" type="text/javascript"></script>
-  </body>
+
+</body>
 </html>
