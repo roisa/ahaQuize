@@ -1,4 +1,4 @@
-/**`
+/**
  * --------------------------------------------------------------------
  * jQuizzy - jQuery plugin for creating quizzes
  * by Siddharth S - www.ssiddharth.com
@@ -29,23 +29,13 @@ var name = "Adek";
                 average: '',
                 bad: '',
                 poor: '',
-                worst: '',
+                worst: ''
 				KD1: '',
-				KD12: '',
-				KD1P: '',
-                KD2: '', 
-                KD22: '', 
-				KD2P: '',
-				KD3: '',
-				KD32: '',
-				KD3P: '',
-                KD4: '', 
-                KD42: '',
-				KD4P: '',				
-				KD5: '',
-				KD52: '',
-				KD5P: '',
-            }
+                KD2: '',
+                KD3: '',
+                KD4: '',
+                KD5: '',
+                }
 
         };
 		
@@ -59,7 +49,7 @@ var name = "Adek";
 		var superContainer = $(this),
             answers = [],
             introFob = '<'+show_prompt()+'><div class="intro-container slide-container"><ul class="text-block2"><li><h1><strong>Petunjuk ahaQuize</strong></h1></li><li><h1>&raquo; Pilih <b>salah satu</b> jawaban</h1></li><li><h1>&raquo; Klik tombol <strong>Next</strong> untuk melanjutkan</h1></li><li><h1>&raquo; Klik tombol <strong>Prev</strong> untuk kembali</h1></li><li><h1>&raquo; Klik tombol <strong>Finish</strong> dan lihat hasil kuis</h1></li></ul><a class="tombol nav-start" href="#quize" style="color:#ffffff;">Mulai</a></div>',
-            exitFob = '<div class="results-container slide-container"><div class="question-number">' + config.endText + '</div><div class="result-keeper"></div></div><div class="notice alert alert-error"><h4>Ops, pilih jawaban terlebih dahulu!</h4></div><div class="progress-keeper" ><div class="progress"></div></div>';
+			exitFob = '<div class="results-container slide-container"><div class="question-number">' + config.endText + '</div><div class="result-keeper"></div></div><div class="notice alert alert-error"><h4>Ops, pilih jawaban terlebih dahulu!</h4></div><div class="progress-keeper" ><div class="progress"></div></div>';
 		
 		
 		function show_prompt()
@@ -164,61 +154,6 @@ var name = "Adek";
             else if (score > 20) return config.resultComments.poor;
             else return config.resultComments.worst;
         }
-/**
- * --------------------------------------------------------------------
-Mulai - Skoring Kompetensi
- * --------------------------------------------------------------------
- **/		
-		function kompetensi1() {
-			if ((userAnswers[0] !== 5) && (userAnswers[1] !== 2 ))
-			return config.resultComments.KD1;
-			if ((userAnswers[0] !== 5) ||  (userAnswers[1] !== 2 ))
-			return config.resultComments.KD12;
-			if ((userAnswers[0] === 5) &&  (userAnswers[1] === 2 ))
-			return config.resultComments.KD1P;
-}
-
-		function kompetensi2() {
-			if  ((userAnswers[2] !== 2) && (userAnswers[3] !== 4) )
-			return config.resultComments.KD2;
-			if  ((userAnswers[2] !== 2) || (userAnswers[3] !== 4) )
-			return config.resultComments.KD22;	
-			if  ((userAnswers[2] === 2) && (userAnswers[3] === 4) )
-			return config.resultComments.KD2P;	
-}
-
-function kompetensi3() {
-			if ((userAnswers[4] !== 3) && (userAnswers[5] !== 4) )
-			return config.resultComments.KD3;
-			if  ((userAnswers[4] !== 3) || (userAnswers[5] !== 4) )
-			return config.resultComments.KD32;
-			if  ((userAnswers[4] === 3) && (userAnswers[5] === 4) ) return config.resultComments.KD3P;
-}
-
-function kompetensi4() {
-			if ((userAnswers[6] !== 1) && (userAnswers[7] !== 2) )
-			return config.resultComments.KD4;
-			if ((userAnswers[6] !== 1) || (userAnswers[7] !== 2) )
-			return config.resultComments.KD42;
-			if ((userAnswers[6] === 1) && (userAnswers[7] === 2) ) return config.resultComments.KD4P;
-			
-}
-
-function kompetensi5() {
-		
-			if ((userAnswers[8] !== 5) && (userAnswers[9] !== 1) )
-			return config.resultComments.KD5;
-			if ((userAnswers[8] !== 5) || (userAnswers[9] !== 1) )
-			return config.resultComments.KD52;
-			if ((userAnswers[8] === 5) && (userAnswers[9] === 1) )
-			return config.resultComments.KD5P;
-}
-/**
- * --------------------------------------------------------------------
-Akhir - Skoring Kompetensi
- * --------------------------------------------------------------------
- **/
-	
 
         progressKeeper.hide();
         notice.hide();
@@ -238,7 +173,7 @@ Akhir - Skoring Kompetensi
         superContainer.find('.nav-start').click(function () {
 
             $(this).parents('.slide-container').fadeOut(200, function () {
-                $(this).next().slideDown(200);
+                $(this).next().fadeIn(200);
                 progressKeeper.fadeIn(200);
             });
             return false;
@@ -248,13 +183,13 @@ Akhir - Skoring Kompetensi
         superContainer.find('.next').click(function () {
 
             if ($(this).parents('.slide-container').find('li.selected').length === 0) {
-                notice.slideDown(100);
+                notice.fadeIn(100);
                 return false;
             }
 
             notice.hide();
-            $(this).parents('.slide-container').slideUp(200, function () {
-                $(this).next().slideDown(200);
+            $(this).parents('.slide-container').fadeOut(200, function () {
+                $(this).next().fadeIn(200);
             });
             progress.animate({
                 width: progress.width() + Math.round(progressWidth / questionLength)
@@ -264,8 +199,8 @@ Akhir - Skoring Kompetensi
 
         superContainer.find('.prev').click(function () {
             notice.hide();
-            $(this).parents('.slide-container').slideUp(200, function () {
-                $(this).prev().slideDown(200);
+            $(this).parents('.slide-container').fadeOut(200, function () {
+                $(this).prev().fadeIn(200);
             });
 
             progress.animate({
@@ -276,7 +211,7 @@ Akhir - Skoring Kompetensi
 
         superContainer.find('.final').click(function () {
             if ($(this).parents('.slide-container').find('li.selected').length === 0) {
-                notice.slideDown(100);
+                notice.fadeIn(100);
                 return false;
             }
 
@@ -312,7 +247,9 @@ Akhir - Skoring Kompetensi
 
             }
             score = roundReloaded(trueCount / questionLength * 100, 2);
-            resultSet = '<h2 class="qTitle">' + judgeSkills(score) + '</h2><h3>'+ kompetensi1() + kompetensi2() + kompetensi3() + kompetensi4() + kompetensi5() +'</h3>'+ '<h2 class="qTitle">' + 'Nilai Anda:'+ ' ' + score + '</h2>' + shareButton + resultSet +'<div class="jquizzy-clear"></div>'+'<div class="row" style="margin-top:50px;"><a href="../ahaQuize/index.html" class="tombol nav-start2" style="color:#ffffff">Kembali</a></div>';
+           
+
+            resultSet = '<h2 class="qTitle">' + judgeSkills(score) + ;'</h2>'+ '<h2 class="qTitle">' + 'Nilai Kamu'+ ' ' + score + '</h2>' + shareButton + resultSet +'<div class="jquizzy-clear"></div>'+'<div class="row" style="margin-top:50px;"><a href="index.html" class="tombol nav-start2" style="color:#ffffff">Kembali</a></div>';
             superContainer.find('.result-keeper').html(resultSet).show(200);
             superContainer.find('.resultsview-qhover').hide();
             superContainer.find('.result-row').hover(function () {

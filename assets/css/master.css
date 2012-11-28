@@ -223,10 +223,10 @@ hr {
   margin-bottom: 55px;
 }
 .leadin .wrap {
-  height: 490px;
+  height: 432px;
 }
 .leadin .wrap2 {
-  height: 500px;
+  height: 700px;
 }
 .leadin .text-block {
   position: absolute;
@@ -462,7 +462,7 @@ hr {
 	Layout - Footer
 ---------------------------------------------------*/
 #footer {
-  padding: 32px 0 64px;
+  padding: 30px 15px;
 }
 #footer p {
   font-size: 12px;
@@ -472,7 +472,8 @@ hr {
   background-position: 0 -725px;
   left: auto;
   right: 0;
-  top: 20px;
+  top: 15px;
+
   width: 60px;
   height: 65px;
 }
@@ -512,9 +513,7 @@ hr {
 .icon-about {
   background-position: 0 -220px;
 }
-.icon-contribute {
-  background-position: 0 -316px;
-}
+
 .icon-contact-us {
   background-position: 0 -412px;
 }
@@ -617,7 +616,7 @@ a.pt-about {
     height: 300px;
   }
   .leadin .wrap2 {
-    height: 410px;
+    height: 750px;
   }
   .contact-us {
     width: auto;
@@ -658,7 +657,7 @@ a.pt-about {
     height: 280px;
   }
   .leadin .wrap2 {
-    height: 450px;
+    height: 680px;
   }  
   .platforms-list li.first a.link-apache,
   .platforms-list li.first a.link-github {
@@ -717,7 +716,7 @@ a.pt-about {
     height: 240px;
   }
   .leadin .wrap2 {
-    height: 420px;
+    height: 740px;
   }
   .leadin .button-container {
     bottom: -10px;
@@ -758,7 +757,7 @@ a.pt-about {
     height: 200px;
   }
   .leadin .wrap2 {
-    height: 300px;
+    height: 850px;
   }  
   .icon {
     background-size: 112px 425px;
@@ -840,7 +839,7 @@ a.pt-about {
     height: 260px;
   }
   .leadin .wrap2 {
-    height: 340px;
+    height: 750px;
   }
   .icon {
     padding: 22px 16px 20px 35px;
