@@ -51,9 +51,15 @@ var init = {
         bad: 'Kurang, Lebih Giat Belajar Lagi',
         poor: 'Kurang, Rajin-rajinlah Belajar',
         worst: 'Sangat Kurang, Rajin-rajinlah Belajar',
+<<<<<<< HEAD
 		KD1: '<br/># Sub-bab Besaran: 0%',
 		KD12: '<br/># Sub-bab Besaran: 50%, Tingkatkan!',
 		KD1P: '<br/># Sub-bab Besaran: 100%, Pertahankan!',
+=======
+	KD1: '<br/># Sub-bab Besaran: 0%',
+	KD12: '<br/># Sub-bab Besaran: 50%, Tingkatkan!',
+	KD1P: '<br/># Sub-bab Besaran: 100%, Pertahankan!',
+>>>>>>> 50828e2726afd98d1b37400d484bac7c2024ed8a
         KD2: '<br/># Sub-bab Zat: 0%, Ciyuslah',
         KD22: '<br/># Sub-bab Zat: 50%, Cemungud!',
         KD2P: '<br/># Sub-bab Zat: 100%, Pertahankan!',
