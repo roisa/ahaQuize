@@ -18,15 +18,15 @@ var init = {
         'correctAnswer': 4
     
 	}, {
-		'question': '5. Bentuk lintasan planet adalah...',
+		'question': '5. Bentuk lintasan Planet adalah...',
         'answers': ['a. bulat', 'b. streamline', 'c. elips', 'd. bulat dan streamline','e. elips dan streamline'],
         'correctAnswer': 3
     }, {
-		'question': '6. Waktu yang diperlukan planet untuk berputar satu kali disebut...',
+		'question': '6. Waktu yang diperlukan Planet untuk berputar satu kali disebut...',
         'answers': ['a. orbit', 'b. ekliptika', 'c. kala revolusi', 'd. kala rotasi','e. kala ekliptika'],
         'correctAnswer': 4
 	}, {
-		'question': '7. Benda dikatakan bergerak jika...',
+		'question': '7. Benda dikatakan berGerak jika...',
         'answers': ['a. mengalami perpindahan', 'b. mengalami proses', 'c. mengalami perubahan bentuk', 'd. mengalami perubahan suhu','e. mengalami perubahan susunan benda ini'],
         'correctAnswer': 1
 	}, {
@@ -50,7 +50,23 @@ var init = {
         average: 'Sedang, Lebih Giat Belajar Lagi ',
         bad: 'Kurang, Lebih Giat Belajar Lagi',
         poor: 'Kurang, Rajin-rajinlah Belajar',
-        worst: 'Sangat Kurang, Rajin-rajinlah Belajar'
+        worst: 'Sangat Kurang, Rajin-rajinlah Belajar',
+	KD1: '<br/># Sub-bab Besaran: 0%',
+	KD12: '<br/># Sub-bab Besaran: 50%, Tingkatkan!',
+	KD1P: '<br/># Sub-bab Besaran: 100%, Pertahankan!',
+        KD2: '<br/># Sub-bab Zat: 0%, Ciyuslah',
+        KD22: '<br/># Sub-bab Zat: 50%, Cemungud!',
+        KD2P: '<br/># Sub-bab Zat: 100%, Pertahankan!',
+        KD3: '<br/># Sub-bab Planet: 0% , Capek ya?',
+        KD32: '<br/># Sub-bab Planet: 50%, Faighting~',
+        KD3P: '<br/># Sub-bab Planet: 100%, Pertahankan',
+        KD4: '<br/># Sub-bab Gerak: 0%, Ciyus donk',
+        KD42: '<br/># Sub-bab Gerak: 50%, Eh ayo..',
+        KD4P: '<br/># Sub-bab Gerak: 100%, Pertahankan',
+        KD5: '<br/># Sub-bab Gaya: 0%, Belajar ini ciyus yak',
+        KD52: '<br/># Sub-bab Gaya: 50%, Semangat lagi yak!',
+		KD5P: '<br/># Sub-bab Gaya: 100%, Pertahankan'
     }
 
 };
+
