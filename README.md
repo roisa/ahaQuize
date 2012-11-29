@@ -16,7 +16,10 @@ http://roisa.github.com/ahaQuize/
 
 Team
 ----
-Aziz - Hamdani - Roisa
+Aziz - https://github.com/guchh
+Hamdani - https://github.com/ham-ham
+Roisa - https://github.com/roisa
+
 
 ----
 Tim Ahae © 2012
