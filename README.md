@@ -16,8 +16,8 @@ http://roisa.github.com/ahaQuize/
 
 Team
 ----
-Aziz - https://github.com/guchh
-Hamdani - https://github.com/ham-ham
+Aziz - https://github.com/guchh | 
+Hamdani - https://github.com/ham-ham | 
 Roisa - https://github.com/roisa
 
 
