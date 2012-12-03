@@ -11,6 +11,7 @@
 (function ($) {
 
 var name = "Adek";
+var lebar= 0;
 
     $.fn.jquizzy = function (settings) 
 	{
@@ -58,8 +59,8 @@ var name = "Adek";
 		
 		var superContainer = $(this),
             answers = [],
-            introFob = '<'+show_prompt()+'><div class="intro-container slide-container"><ul class="text-block2"><li><h1><strong>Petunjuk ahaQuize</strong></h1></li><li><h1>&raquo; Pilih <b>salah satu</b> jawaban</h1></li><li><h1>&raquo; Klik tombol <strong>Next</strong> untuk melanjutkan</h1></li><li><h1>&raquo; Klik tombol <strong>Prev</strong> untuk kembali</h1></li><li><h1>&raquo; Klik tombol <strong>Finish</strong> dan lihat hasil kuis</h1></li></ul><a class="tombol nav-start" href="#quize" style="color:#ffffff;">Mulai</a></div>',
-            exitFob = '<div class="results-container slide-container"><div class="question-number">' + config.endText + '</div><div class="result-keeper"></div></div><div class="notice alert alert-error"><h4>Ops, pilih jawaban terlebih dahulu!</h4></div><div class="progress-keeper" ><div class="progress"></div></div>';
+            introFob = '<'+show_prompt()+'><div class="progress-keeper" ><div class="progress"></div></div><div class="intro-container slide-container"><ul class="text-block2"><li><h1><strong>Petunjuk ahaQuize</strong></h1></li><li><h1>&raquo; Pilih <b>salah satu</b> jawaban</h1></li><li><h1>&raquo; Klik tombol <strong>Next</strong> untuk melanjutkan</h1></li><li><h1>&raquo; Klik tombol <strong>Prev</strong> untuk kembali</h1></li><li><h1>&raquo; Klik tombol <strong>Finish</strong> dan lihat hasil kuis</h1></li></ul><a class="tombol nav-start" href="#quize" style="color:#ffffff;">Mulai</a></div>',
+            exitFob = '<div class="results-container slide-container"><div class="question-number">' + config.endText + '</div><div class="result-keeper"></div></div><div class="notice alert alert-error"><h4>Ops, pilih jawaban terlebih dahulu!</h4></div>';
 		
 		
 		function show_prompt()
@@ -122,12 +123,10 @@ var name = "Adek";
         var progress = superContainer.find('.progress'),
             progressKeeper = superContainer.find('.progress-keeper'),
             notice = superContainer.find('.notice'),
-            progressWidth = progressKeeper.width(),
+            progressWidth = 100,
             userAnswers = [],
             questionLength = config.questions.length,
-            slidesList = superContainer.find('.slide-container');
-		
-		
+            slidesList = superContainer.find('.slide-container');		
 		
         function checkAnswers() 
 		{
@@ -256,10 +255,11 @@ Akhir - Skoring Kompetensi
             $(this).parents('.slide-container').slideUp(200, function () {
                 $(this).next().slideDown(200);
             });
+			lebar += questionLength;
             progress.animate({
-                width: progress.width() + Math.round(progressWidth / questionLength)
+                width: '0'+lebar+'%'
             }, 200);
-            return false;
+			return false;
         });
 
         superContainer.find('.prev').click(function () {
@@ -268,8 +268,9 @@ Akhir - Skoring Kompetensi
                 $(this).prev().slideDown(200);
             });
 
+			lebar -= questionLength;
             progress.animate({
-                width: progress.width() - Math.round(progressWidth / questionLength)
+                width: '0'+lebar+'%'
             }, 200);
             return false;
         });
