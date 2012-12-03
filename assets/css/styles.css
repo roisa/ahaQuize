@@ -1,5 +1,6 @@
 /*!
  * jQuizzy quiz style edited by Tim Ahae
+ * thanks to @danjikasenyuman
  */
 .notification
 	{
@@ -149,8 +150,7 @@
 .main-quiz-holder .progress-keeper {
     text-align:left;
 	left:10px;
-	 margin: 0px 0px 0px 0px;
-	 margin-top:-397px;
+	 margin: 0px 0px 35px 0px;
 }
 
 .main-quiz-holder .progress {
@@ -374,7 +374,3 @@
 	  height:35px;
 	  padding:5px;
 }
-
-.pagination { position: absolute; bottom: 15px; left: 50%; margin-left: -44px; width: 88px; }
-.pagination a { background: url(../img/pagination.png) no-repeat 0 0; width: 20px; height: 20px; display: inline-block; font-size: 0; line-height: 0; text-indent: -4000px; cursor: default; }
-.pagination a.selected { background-position: 0 -20px; }
